@@ -1,0 +1,23 @@
+song
+	id
+	title TEXT
+	album FOREIGN_KEY album_id
+	artist FOREIGN_KEY artist_id
+	genre FOREIGN_KEY genre_id
+	release_date TEXT
+
+album
+	id
+	title TEXT
+	artist FOREIGN_KEY artist_id
+	genre FOREIGN_KEY genre_id
+	release_date TEXT
+
+artist
+	id
+	name TEXT
+	country TEXT
+
+genre
+	id
+	name TEXT
